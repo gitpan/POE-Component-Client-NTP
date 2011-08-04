@@ -1,5 +1,31 @@
-Changelog for POE-Component-Client-NTP
-======================================
+==============================
+2011-08-04 11:02:29 +0100 0.04
+==============================
 
-0.02	Wed Apr 15 16:27:09 BST 2009
-	- Initial CPAN release
+  commit c0e77a7b464f62e37829592996491c0687927b0a
+  Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
+  Date:   Thu Aug 4 11:02:29 2011 +0100
+  
+    Bump version to 0.04
+
+  commit af7e66f875ee12ac9dd906f806384a72b1882f30
+  Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
+  Date:   Thu Aug 4 11:01:53 2011 +0100
+  
+    Update tests for 'host' and 'context' responses
+
+  commit 8d0079efd326fecf7b6cf15c48f0e0cf285cb6fc
+  Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
+  Date:   Thu Aug 4 10:56:04 2011 +0100
+  
+    Pass the 'host' back in the response event
+
+  commit 96144838b806be6d1b998b92194cbb5b7e54551e
+  Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
+  Date:   Thu Aug 4 10:50:44 2011 +0100
+  
+    Convert distribution to Dist::Zilla 
+
+====================================
+End of changes in the last 1825 days
+====================================

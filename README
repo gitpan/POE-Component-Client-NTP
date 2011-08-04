@@ -1,23 +1,26 @@
 NAME
     POE::Component::Client::NTP - A POE Component to query NTP servers
 
+VERSION
+    version 0.04
+
 SYNOPSIS
       use strict;
       use warnings;
       use POE qw(Component::Client::NTP);
       use Data::Dumper;
-  
+
       my $host = shift or die "Please specify a host name to query\n";
-  
+
       POE::Session->create(
         package_states => [
-            main => [qw(_start _response)],
+                main => [qw(_start _response)],
         ],
       );
-  
+
       $poe_kernel->run();
       exit 0;
-  
+
       sub _start {
         POE::Component::Client::NTP->get_ntp_response(
            host => $host,
@@ -25,7 +28,7 @@ SYNOPSIS
         );
         return;
       }
-  
+
       sub _response {
         my $packet = $_[ARG0];
         print Dumper( $packet );
@@ -52,6 +55,7 @@ CONSTRUCTOR
           'host', the name/address of the NTP server to query, default is 'localhost';
           'port', the UDP port to send the query to, default is 123;
           'timeout', the number of seconds to wait for a response, default is 60 seconds;
+          'context', any reference data you wish to receive in the response event;
 
         The "session" parameter is only required if you wish the output
         event to go to a different session than the calling session, or if
@@ -62,7 +66,9 @@ OUTPUT EVENT
     following keys:
 
       'response', this will be a HASHREF on success;
+      'host', the host string that was passed to the constructor;
       'error', on failure this will be defined, with an error string;
+      'context', whatever was passed to the constructor;
 
     The "response" hashref will contain various parts of the NTP response
     packet as outlined in RFC1305. Like Net::NTP some of the data will be
@@ -84,18 +90,6 @@ OUTPUT EVENT
               'Mode' => 4,
               'Root Dispersion' => '0.0000'
 
-AUTHOR
-    Chris "BinGOs" Williams <chris@bingosnet.co.uk>
-
-    Derived from Net::NTP by James G. Willmore
-
-LICENSE
-    Copyright © Chris Williams and James G. Willmore.
-
-    This module may be used, modified, and distributed under the same terms
-    as Perl itself. Please see the license that came with your Perl
-    distribution for details.
-
 SEE ALSO
     Net::NTP
 
@@ -104,4 +98,16 @@ SEE ALSO
     <http://www.faqs.org/rfcs/rfc1305.html>
 
     <http://www.faqs.org/rfcs/rfc2030.html>
+
+AUTHORS
+    *   Chris Williams <chris@bingosnet.co.uk>
+
+    *   James G. Willmore
+
+COPYRIGHT AND LICENSE
+    This software is copyright (c) 2011 by Chris Williams and James G.
+    Willmore.
+
+    This is free software; you can redistribute it and/or modify it under
+    the same terms as the Perl 5 programming language system itself.
 
