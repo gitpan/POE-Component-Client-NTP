@@ -1,6 +1,6 @@
 package POE::Component::Client::NTP;
-BEGIN {
-  $POE::Component::Client::NTP::VERSION = '0.04';
+{
+  $POE::Component::Client::NTP::VERSION = '0.06';
 }
 
 #ABSTRACT: A POE Component to query NTP servers
@@ -270,7 +270,7 @@ POE::Component::Client::NTP - A POE Component to query NTP servers
 
 =head1 VERSION
 
-version 0.04
+version 0.06
 
 =head1 SYNOPSIS
 
@@ -312,7 +312,7 @@ services to other POE sessions and components.
 NTP is a protocol for synchronising the clocks of computer systems over data networks and is described in
 RFC 1305 and RFC 2030.
 
-The code in this module is derided from L<Net::NTP> by James G. Willmore
+The code in this module is derived from L<Net::NTP> by James G. Willmore
 
 =head1 CONSTRUCTOR
 
@@ -388,7 +388,7 @@ James G. Willmore
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2011 by Chris Williams and James G. Willmore.
+This software is copyright (c) 2012 by Chris Williams and James G. Willmore.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.

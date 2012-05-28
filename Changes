@@ -1,4 +1,45 @@
 ==============================
+2012-05-28 18:47:09 +0100 0.06
+==============================
+
+  commit b42a3ae65af9f0153f0eed613bedc4575109a893
+  Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
+  Date:   Mon May 28 18:47:09 2012 +0100
+  
+    Fix wording in POD that completely changes the meaning of the
+    sentence. Doh.
+
+  commit a47d87f3e9d4239d23bc3bfb4c875ffd16cc295d
+  Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
+  Date:   Thu Aug 4 11:02:29 2011 +0100
+  
+    Bump version to 0.04
+
+  commit cae1c007cabbcb8b6037d4989a4a30778727111b
+  Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
+  Date:   Thu Aug 4 11:01:53 2011 +0100
+  
+    Update tests for 'host' and 'context' responses
+
+  commit 215c397c109df56a8902dd4c1eb47ca70ed00a16
+  Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
+  Date:   Thu Aug 4 10:56:04 2011 +0100
+  
+    Pass the 'host' back in the response event
+
+  commit e39882f2a6f7c0017eeaf893c51ddc91ab5d90d6
+  Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
+  Date:   Thu Aug 4 10:50:44 2011 +0100
+  
+    Convert distribution to Dist::Zilla
+
+  commit ae5aa507d1c108d70875605f42620939d56cf4c3
+  Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
+  Date:   Thu Aug 4 10:50:44 2011 +0100
+  
+    Convert distribution to Dist::Zilla 
+
+==============================
 2011-08-04 11:02:29 +0100 0.04
 ==============================
 

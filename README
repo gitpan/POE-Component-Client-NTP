@@ -2,7 +2,7 @@ NAME
     POE::Component::Client::NTP - A POE Component to query NTP servers
 
 VERSION
-    version 0.04
+    version 0.06
 
 SYNOPSIS
       use strict;
@@ -43,7 +43,7 @@ DESCRIPTION
     NTP is a protocol for synchronising the clocks of computer systems over
     data networks and is described in RFC 1305 and RFC 2030.
 
-    The code in this module is derided from Net::NTP by James G. Willmore
+    The code in this module is derived from Net::NTP by James G. Willmore
 
 CONSTRUCTOR
     "get_ntp_response"
@@ -105,7 +105,7 @@ AUTHORS
     *   James G. Willmore
 
 COPYRIGHT AND LICENSE
-    This software is copyright (c) 2011 by Chris Williams and James G.
+    This software is copyright (c) 2012 by Chris Williams and James G.
     Willmore.
 
     This is free software; you can redistribute it and/or modify it under
