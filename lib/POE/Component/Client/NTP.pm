@@ -1,6 +1,6 @@
 package POE::Component::Client::NTP;
 {
-  $POE::Component::Client::NTP::VERSION = '0.06';
+  $POE::Component::Client::NTP::VERSION = '0.08';
 }
 
 #ABSTRACT: A POE Component to query NTP servers
@@ -260,9 +260,11 @@ sub _dispatch {
 
 'What is the time, Mr Wolf?';
 
-
 __END__
+
 =pod
+
+=encoding UTF-8
 
 =head1 NAME
 
@@ -270,7 +272,7 @@ POE::Component::Client::NTP - A POE Component to query NTP servers
 
 =head1 VERSION
 
-version 0.06
+version 0.08
 
 =head1 SYNOPSIS
 
@@ -388,10 +390,9 @@ James G. Willmore
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2012 by Chris Williams and James G. Willmore.
+This software is copyright (c) 2013 by Chris Williams and James G. Willmore.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
 
 =cut
-
