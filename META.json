@@ -5,7 +5,7 @@
       "James G. Willmore"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Dist::Zilla version 5.006, CPAN::Meta::Converter version 2.132830",
+   "generated_by" : "Dist::Zilla version 5.020, CPAN::Meta::Converter version 2.142690",
    "license" : [
       "perl_5"
    ],
@@ -17,7 +17,7 @@
    "prereqs" : {
       "configure" : {
          "requires" : {
-            "ExtUtils::MakeMaker" : "6.30"
+            "ExtUtils::MakeMaker" : "0"
          }
       },
       "develop" : {
@@ -29,9 +29,9 @@
       },
       "runtime" : {
          "requires" : {
-            "IO::Socket::INET" : "0",
+            "IO::Socket::IP" : "0.29",
             "POE" : "1.004",
-            "Socket" : "0",
+            "Socket" : "2.013",
             "perl" : "v5.6.0"
          }
       },
@@ -53,6 +53,6 @@
          "web" : "https://github.com/bingos/poe-component-client-ntp"
       }
    },
-   "version" : "0.08"
+   "version" : "0.10"
 }
 

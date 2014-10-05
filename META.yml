@@ -4,25 +4,25 @@ author:
   - 'Chris Williams <chris@bingosnet.co.uk>'
   - 'James G. Willmore'
 build_requires:
-  File::Spec: 0
-  IO::Handle: 0
-  IPC::Open3: 0
-  Test::More: 0
+  File::Spec: '0'
+  IO::Handle: '0'
+  IPC::Open3: '0'
+  Test::More: '0'
 configure_requires:
-  ExtUtils::MakeMaker: 6.30
+  ExtUtils::MakeMaker: '0'
 dynamic_config: 0
-generated_by: 'Dist::Zilla version 5.006, CPAN::Meta::Converter version 2.132830'
+generated_by: 'Dist::Zilla version 5.020, CPAN::Meta::Converter version 2.142690'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
-  version: 1.4
+  version: '1.4'
 name: POE-Component-Client-NTP
 requires:
-  IO::Socket::INET: 0
-  POE: 1.004
-  Socket: 0
+  IO::Socket::IP: '0.29'
+  POE: '1.004'
+  Socket: '2.013'
   perl: v5.6.0
 resources:
   homepage: https://github.com/bingos/poe-component-client-ntp
   repository: https://github.com/bingos/poe-component-client-ntp.git
-version: 0.08
+version: '0.10'
